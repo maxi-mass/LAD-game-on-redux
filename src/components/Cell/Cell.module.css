@@ -1,0 +1,31 @@
+.field {
+    height: 70px;
+    width: 70px;
+    background-color: #2e36ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.white {
+    height: 50px;
+    width: 50px;
+    background-color: #FFF;
+    border-radius: 100px;
+}
+
+.red {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.yellow {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 100px;
+}
