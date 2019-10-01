@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Cell from './../Cell/Cell';
+import Cell from './Cell/Cell';
 
 const Column = ({ column, play }) => {
     return (

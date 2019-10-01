@@ -1,3 +1,5 @@
+import {serverAPI} from "../api/api";
+
 const SET_BOARD = 'SET-BOARD';
 const SET_CURRENT_PLAYER = 'SET-CURRENT-PLAYER';
 const SET_GAME_OVER = 'SET-GAME-OVER';
@@ -37,6 +39,24 @@ export const gameReducer = (state = initialState, action) => {
         default:
             return state;
     }
+};
+
+export const setData = () => dispatch => {
+    serverAPI.getData().then(serverData => {
+        dispatch(setBoard(serverData.board));
+        dispatch(setGameOver(serverData.isGameOver));
+        dispatch(setCurrentPlayer(serverData.currentPlayer));
+        dispatch(setMessage(serverData.message));
+    });
+};
+
+export const play = ({columnIndex, currentPlayer}) => dispatch => {
+    serverAPI.play({columnIndex, currentPlayer}).then(serverData => {
+        dispatch(setBoard(serverData.board));
+        dispatch(setGameOver(serverData.isGameOver));
+        dispatch(setCurrentPlayer(serverData.currentPlayer));
+        dispatch(setMessage(serverData.message));
+    });
 };
 
 export const setBoard = board => ({type: SET_BOARD, board});

@@ -1,0 +1,8 @@
+.gameOver {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+.message {
+    margin-bottom: 40px;
+}

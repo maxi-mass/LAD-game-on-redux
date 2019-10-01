@@ -1,5 +1,5 @@
 import React from 'react';
-import Column from "../Column/Column";
+import Column from "./Column/Column";
 import PropTypes from 'prop-types';
 
 const Table = ({board, message, initGame, play}) => {

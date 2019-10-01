@@ -1,7 +1,7 @@
 .field {
-    height: 70px;
-    width: 70px;
-    background-color: #2e36ff;
+    height: 40px;
+    width: 40px;
+    background-color: coral;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,22 +10,22 @@
 }
 
 .white {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #FFF;
     border-radius: 100px;
 }
 
 .red {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: red;
     border-radius: 100px;
 }
 
 .yellow {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: yellow;
     border-radius: 100px;
 }
